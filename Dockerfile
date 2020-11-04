@@ -1,12 +1,14 @@
-FROM alpine:3.8
+FROM alpine:3.12
 
 RUN apk --no-cache --update add \
-        python \
-        py-pip \
-        py-setuptools \
+        python3 \
+        py3-pip \
+        py3-setuptools \
+        openssh-client \
         ca-certificates \
         groff \
         less \
+        jq \
         bash \
         wget \
         unzip \
