@@ -1,7 +1,7 @@
 .PHONY: build run
 
 IMAGE_BASE = interrobangc
-IMAGE = awscli
+IMAGE = awscli2
 MY_PWD = $(shell pwd)
 
 all: build
