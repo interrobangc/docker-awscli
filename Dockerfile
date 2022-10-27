@@ -19,12 +19,8 @@ RUN apk --no-cache --update add \
     addgroup -S aws&& \
     adduser -G aws -D aws
 
-COPY docker-entrypoint.sh /usr/bin/docker-entrypoint.sh
-
 USER aws
 
 WORKDIR /app
-
-ENTRYPOINT ["/usr/bin/docker-entrypoint.sh"]
 
 CMD ["bash"]
