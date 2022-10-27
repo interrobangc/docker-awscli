@@ -28,5 +28,4 @@ RUN addgroup -S aws && adduser -G aws -D aws
 USER aws
 
 WORKDIR /app
-
 ENTRYPOINT ["aws"]

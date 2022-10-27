@@ -25,5 +25,5 @@ docker run -it --rm -e AWS_DEFAULT_REGION -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACC
 To run a command on an awscli container with your AWS credentials in a config file
 
 ```
-docker run -it --rm -v ~/.aws:/home/aws/.aws interrobangc/awscli2
+docker run -it --rm -v ~/.aws:/home/aws/.aws interrobangc/awscli2 s3 ls
 ```
